@@ -3,20 +3,27 @@
         <!--    <img alt="Vue logo" src="./assets/logo.png">-->
         <!--      https://www.npmjs.com/package/exceljs     -->
         <!--      https://github.com/exceljs/exceljs        -->
-        <HelloWorld msg="Эксперементы с exceljs"/>
-        <Xls_excel4node></Xls_excel4node>
+        <div v-if="false">
+            <HelloWorld msg="Эксперементы с exceljs"/>
+            <Xls_excel4node></Xls_excel4node>
+        </div>
+
+        <XlsUpload></XlsUpload>
+
     </div>
 </template>
 
 <script>
     import HelloWorld from './components/HelloWorld.vue'
     import Xls_excel4node from "./components/xls_excel4node";
+    import XlsUpload from "./components/XlsUpload";
 
     export default {
         name: 'app',
         components: {
             HelloWorld,
-            Xls_excel4node
+            Xls_excel4node,
+            XlsUpload
         }
     }
 </script>
